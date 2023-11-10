@@ -4,14 +4,14 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer gap-0">
-                <div className="justify-center py-6 text-white bg-[#1F2937] w-full">
+                <div className="justify-center py-6 md:py-12 text-white bg-[#1F2937] w-full">
                     <h1 className="text-xl">CONTACT US</h1>
                     <p>123 ABS Street, Uni 21, Bangladesh</p>
                     <p>+88 123456789</p>
                     <p>Mon - Fri: 08:00 - 22:00</p>
                     <p>Sat - Sun: 10:00 - 23:00</p>
                 </div>
-                <nav className="w-full h-full justify-center py-6 text-white bg-[#111827]">
+                <nav className="w-full h-full justify-center py-6 md:py-12 text-white bg-[#111827]">
                     <header>Follow US</header>
                     <h1>Join us on social media</h1>
                     <div className="grid grid-flow-col gap-4">
