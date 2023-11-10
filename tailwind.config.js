@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         cinzel : "Cinzel, serif",
-        inter : "Inter, sans- serif"
+        inter : "Inter, sans- serif",
+        raleway :  "Raleway, sans-serif",
       }
     },
   },

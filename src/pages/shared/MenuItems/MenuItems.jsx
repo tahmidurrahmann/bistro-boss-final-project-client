@@ -23,6 +23,9 @@ const MenuItems = () => {
                     menu.map(item => <MenuCard key={item._id} item={item}></MenuCard>)
                 }
             </div>
+            <div className="flex justify-center my-10">
+                <button className="text-[#1F2937] font-medium pb-1.5 uppercase border-b-2">View Full  Menu</button>
+            </div>
         </div>
     );
 };
