@@ -1,12 +1,34 @@
+import { NavLink } from "react-router-dom";
+import shopLogo from '../../../assets/assets/icon/151-1511569_cart-notifications-free-shopping-cart-favicon-hd-png-removebg-preview.png'
+
 const NavBar = () => {
 
-    const navLinks = <>
-        <li><a>Item 1</a></li>
-        <li>
-            <a>Parent</a>
-        </li>
-        <li><a>Item 3</a></li>
-    </>
+    const navLinks = <div className="flex items-center gap-4">
+        <NavLink
+            to="/"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-[#EEFF25]" : ""
+            }
+        >
+            Home
+        </NavLink>
+        <NavLink
+            to="/menu"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-[#EEFF25]" : ""
+            }
+        >
+            Our Menu
+        </NavLink>
+        <NavLink
+            to="/shop/salads"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-[#EEFF25]" : ""
+            }
+        >
+            <span className="flex items-center">Our Shop <img className="w-[40px]" src={shopLogo} alt="" /></span>
+        </NavLink>
+    </div>
 
     return (
         <>
