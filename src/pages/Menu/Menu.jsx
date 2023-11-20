@@ -20,7 +20,7 @@ const Menu = () => {
     const soup = menu.filter(item => item.category === "soup");
 
     return (
-        <div>
+        <div className='max-w-screen-2xl mx-auto'>
             <Helmet>
             <title>Bistro Boss | Menu</title>
             </Helmet>

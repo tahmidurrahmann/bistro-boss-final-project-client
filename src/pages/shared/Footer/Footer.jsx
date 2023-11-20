@@ -2,7 +2,7 @@ import moment from "moment/moment";
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="max-w-screen-2xl mx-auto">
             <div className="footer gap-0">
                 <div className="justify-center py-6 md:py-12 text-white bg-[#1F2937] w-full">
                     <h1 className="text-xl">CONTACT US</h1>

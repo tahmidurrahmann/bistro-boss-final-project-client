@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet-async";
 const Shop = () => {
 
     const categories = ["salads", "pizza", "soups", "desserts", "drinks"];
-    const {category} = useParams();
+    const { category } = useParams();
     const initialIndex = categories.indexOf(category);
     const [indexNum, setIndexNum] = useState(initialIndex);
     const [menu] = useMenu();
@@ -22,7 +22,7 @@ const Shop = () => {
     const drinks = menu.filter(item => item.category === "drinks");
 
     return (
-        <div>
+        <div className='max-w-screen-2xl mx-auto'>
             <Helmet>
                 <title>Bistro Boss | Our Shop</title>
             </Helmet>
@@ -37,37 +37,37 @@ const Shop = () => {
                 </TabList>
 
                 <TabPanel>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                         {
-                            salad.map(item => <ShopItems key={item._id} items={item}></ShopItems>)
+                            salad.map(item => <ShopItems key={item._id} item={item}></ShopItems>)
                         }
                     </div>
                 </TabPanel>
                 <TabPanel>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                         {
-                            pizza.map(item => <ShopItems key={item._id} items={item}></ShopItems>)
+                            pizza.map(item => <ShopItems key={item._id} item={item}></ShopItems>)
                         }
                     </div>
                 </TabPanel>
                 <TabPanel>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                         {
-                            soup.map(item => <ShopItems key={item._id} items={item}></ShopItems>)
+                            soup.map(item => <ShopItems key={item._id} item={item}></ShopItems>)
                         }
                     </div>
                 </TabPanel>
                 <TabPanel>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                         {
-                            dessert.map(item => <ShopItems key={item._id} items={item}></ShopItems>)
+                            dessert.map(item => <ShopItems key={item._id} item={item}></ShopItems>)
                         }
                     </div>
                 </TabPanel>
                 <TabPanel>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                         {
-                            drinks.map(item => <ShopItems key={item._id} items={item}></ShopItems>)
+                            drinks.map(item => <ShopItems key={item._id} item={item}></ShopItems>)
                         }
                     </div>
                 </TabPanel>

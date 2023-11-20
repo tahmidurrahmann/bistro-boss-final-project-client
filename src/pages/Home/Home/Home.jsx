@@ -11,7 +11,7 @@ import chefImg from "../../../assets/assets/home/chef-service.jpg"
 
 const Home = () => {
     return (
-        <div>
+        <div className='max-w-screen-2xl mx-auto'>
             <Helmet>
                 <title>Bistro Boss | Home</title>
             </Helmet>
